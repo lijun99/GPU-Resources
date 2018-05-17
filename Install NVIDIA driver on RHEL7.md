@@ -1,4 +1,7 @@
-# Prerequisite
+# Install NVIDIA driver on Redhat or CentOS 7 
+
+
+## Prerequisite
 ```
 yum -y update
 yum -y groupinstall "GNOME Desktop" "Development Tools"
@@ -7,7 +10,7 @@ yum -y install epel-release
 yum -y install dkms
 ```
 
-# Disable nouveau driver
+## Disable nouveau driver
 (If you run NVIDIA installation script, it will create the modprobe config for you, but not the grub config.)
 
 Edit `/etc/default/grub`. Append the following  to “GRUB_CMDLINE_LINUX”
@@ -26,8 +29,7 @@ blacklist nouveau
 ```
 Reboot!
 
-# Install NVIVIDA driver 
-
+## Install NVIVIDA driver 
 The NVIDIA installer will not run while X is running so switch to text mode:
 ```
 systemctl isolate multi-user.target
@@ -42,7 +44,7 @@ Run the NVIDIA driver installer
 sh NVIDIA-Linux-x86_64-*.run
 ```
 
-# Multiple GPUs
+## Multiple GPUs
 If you have multiple GPUs installed, the `xorg.conf` created by `nvidia-xconfig` may not capture correctly the GPU card you use to connect to monitors. 
 
 If you cannot see display, you will need to specify `BusID` in `xorg.conf`
