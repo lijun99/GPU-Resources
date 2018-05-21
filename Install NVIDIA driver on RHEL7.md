@@ -16,6 +16,7 @@ rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum update
 yum -y install dkms
 ```
+Note, `dkms` is recommended as it recompiles NVIDIA kernel module whenever there is a kernel update.
 
 
 ## Disable nouveau driver
