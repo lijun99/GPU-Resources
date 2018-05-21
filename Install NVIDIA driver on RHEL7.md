@@ -10,6 +10,14 @@ yum -y install epel-release
 yum -y install dkms
 ```
 
+For RHEL7, `epel-release` is not in standard repos, try installing from source instead 
+```
+rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum update
+yum -y install dkms
+```
+
+
 ## Disable nouveau driver
 (If you run NVIDIA installation script, it will create the modprobe config for you, but not the grub config.)
 
