@@ -45,7 +45,7 @@ sh NVIDIA-Linux-x86_64-*.run
 ```
 
 ## Multiple GPUs
-If you have multiple GPUs installed, the `xorg.conf` created by `nvidia-xconfig` may not capture correctly the GPU card you use to connect to monitors. 
+If you have multiple GPUs installed, the `/etc/X11/xorg.conf` created by `nvidia-xconfig` may not capture correctly the GPU card you use to connect to monitors. 
 
 If you cannot see display, you will need to specify `BusID` in `xorg.conf`
 
