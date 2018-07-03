@@ -74,6 +74,15 @@ nvidia-xconfig --query-gpu-info
 
 For multiple monitors with multiple GPUs, run `nvidia-settings` from X. 
 
+## Troubleshooting 
+```
+modinfo nvidia
+cat /proc/driver/nvidia/version 
+dkms status
+```
+If a new nvidia driver is installed/updated, (most certainly) the `initramfs-$kernel_version.img` in `/boot` directory should be updated. If not, you may need to force a reinstallation of the kernel ``yum reinstall kernel``. 
+
+
 
 
 
