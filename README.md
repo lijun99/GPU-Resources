@@ -1,2 +1,3 @@
 # sysadmin
-Notes on systems
+
+Notes on various CUDA/GPU related system adminstrations. 
