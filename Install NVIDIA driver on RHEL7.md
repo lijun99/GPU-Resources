@@ -22,8 +22,8 @@ Note, `dkms` is recommended as it recompiles NVIDIA kernel module whenever there
 ## Disable nouveau driver
 (If you run NVIDIA installation script, it will create the modprobe config for you, but not the grub config.)
 
-Edit `/etc/default/grub`. Append the following  to “GRUB_CMDLINE_LINUX”
-rd.driver.blacklist=nouveau nouveau.modeset=0
+Edit `/etc/default/grub`. Append the following  to `GRUB_CMDLINE_LINUX`
+`rd.driver.blacklist=nouveau nouveau.modeset=0`
 
 Generate a new grub configuration to include the above changes.
 ```
