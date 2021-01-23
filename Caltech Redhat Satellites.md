@@ -1,4 +1,4 @@
-https://www.imss.caltech.edu/news/1447
+http://www.imss.caltech.edu/services/computers-printers-software/software/redhat
 
 
 Red Hat Satellite v5, has reached end of life and will be decommissioned on Monday, November 27th. After November 27th, please follow instructions below to upgrade your servers to the new Red Hat Satellite v6 system.
